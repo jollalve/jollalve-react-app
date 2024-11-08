@@ -11,7 +11,6 @@ const NavbarComponent = () => {
             <CartWidgetComponent counter = {15}/>
         </nav>
     )
-
 }
 
 export default NavbarComponent

@@ -1,11 +1,12 @@
-.navContainer {
+/* .navContainer {
     width: 100%;
     padding: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: black;
-}
+    margin: 0;
+} */
 
 .aLink {
     color: white;
@@ -27,3 +28,7 @@
     color: white;
     font-size: 1rem;
 }
+
+/* .container {
+    margin: 0 !important;
+} */
