@@ -1,6 +1,7 @@
 import { BsCart } from "react-icons/bs";
 import { Badge } from "react-bootstrap";
 
+
 const CartWidgetComponent = () => {
     return (
         <div>

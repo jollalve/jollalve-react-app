@@ -8,7 +8,7 @@ const NavbarComponent = () => {
             <a className="aLink">Equipos</a>
             <a className="aLink">Mobiliario</a>
             <a className="aLink">Ofertas</a>
-            <CartWidgetComponent counter = {15}/>
+            <CartWidgetComponent/>
         </nav>
     )
 }
