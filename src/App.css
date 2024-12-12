@@ -21,6 +21,7 @@
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .item-d-description {
@@ -28,3 +29,23 @@
     margin-top: 5px;
     padding: 5px;
 }
+
+.loader {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartIcon {
+    text-decoration: none;
+    color: black;
+}
+
+.cartContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

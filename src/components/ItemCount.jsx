@@ -22,12 +22,13 @@ const ItemCount = ({stock, onAdd}) => {
 
   return (
     <div className='text-center p-3'>
+        {stock === 0 && <p>SIN STOCK</p>}
         <div>
             <button className='btn btn-danger m-1' onClick={restar}>-</button>
             <span className='btn btn-light m-1'>{count}</span>
             <button className='btn btn-success m-1' onClick={sumar}>+</button>
         </div>
-        <button className='btn btn-primary m-1' onClick={onAddHandler}>COMPRAR</button>
+        <button className='btn btn-primary m-1' onClick={onAddHandler} disabled={stock === 0}>COMPRAR</button>
     </div>
   )
 }
