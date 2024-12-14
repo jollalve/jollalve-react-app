@@ -7,8 +7,19 @@ import Swal from 'sweetalert2'
 const ItemDetail = ({producto}) => {
     const [compra, setCompra] = useState(false)
     const {addToCart, itemQuantity} = useCart()
+
+    if (!producto) {
+      return (
+          <div className="text-color-secondary">
+              <h1>ESTE PRODUCTO NO EXISTE</h1>
+              <Link to="/" className="btn btn-danger">Volver al Inicio</Link>
+          </div>
+      )
+  }
+
+  console.log(producto);
+
     const onAdd = (cantidad) => {
-        alert(`Agregaste al carrito ${cantidad} productos`)
         setCompra(true)
         Swal.fire({
           position: "top-end",

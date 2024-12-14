@@ -8,6 +8,10 @@
     color: white;
 }
 
+.text-color-secondary {
+    color: black;
+}
+
 .item-d-container {
     background-color: white;
     border-radius: 5px;

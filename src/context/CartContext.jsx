@@ -5,7 +5,6 @@ export const CartContext = createContext();
 const prodFromLocalStore = JSON.parse(localStorage.getItem('carrito')) || []
 export const CartProvider = ({children}) => {
     const [cart, setCart] = useState(prodFromLocalStore)
-    //localstorage para carrito persistente despues de actualizar (opcional)
     useEffect(()=>{
         localStorage.setItem('carrito', JSON.stringify(cart))
     },[cart])
@@ -25,7 +24,6 @@ export const CartProvider = ({children}) => {
             )
         } else {
             setCart([...cart, {...item, cantidad: quantity}])}
-            // sumar un item nuevo al carrito
     }
 
     const isInCart = (id) => {
@@ -48,13 +46,11 @@ export const CartProvider = ({children}) => {
         return cart.reduce ((acc, prod) => (acc += prod.price * prod.cantidad), 0)
     }
 
-    //opcional, descontar stock local (para no agregar al carrito mas de lo que hay)
     const itemQuantity = (id) => {
         const itemInCart = cart.find((prod)=> prod.id === id)
         if(itemInCart) {
-            //devuelve la cantidad de ese item en el carrito
             return itemInCart.cantidad
-        } else { // no existe en el carrito, devuelve 0
+        } else { 
             return 0
         }
     }

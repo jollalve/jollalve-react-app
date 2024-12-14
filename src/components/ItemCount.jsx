@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Swal from 'sweetalert2'
 
 const ItemCount = ({stock, onAdd}) => {
     const [count, setCount] = useState(1)
@@ -16,7 +17,7 @@ const ItemCount = ({stock, onAdd}) => {
         if (count > 0){
             onAdd(count)
         } else {
-            alert('Debes agregar al menos 1 producto al carrito para poder comprar')
+            Swal.fire("Para poder comprar debes agregar al menos 1 producto al carrito!");
         }
     }
 

@@ -2,7 +2,7 @@
 
  Proyecto final para el curso de ReactJS en CoderHouse, es un e-commerce orientado a la venta de insumos para tatuadores.
 
-![image](/aca va el enlace o ubicacion de la imagen)
+[![imagen-2024-12-14-173219299.png](https://i.postimg.cc/Yqk35BK5/imagen-2024-12-14-173219299.png)](https://postimg.cc/0rWDS3Nn)
 
 ### Instalacion
 
@@ -23,4 +23,9 @@ Si desea ver el proyecto, ingrese al siguiente link [JP-TATTOO-SUPPLY] (aca va e
 - [React Hook Form] (https://react-hook-form.com): Validacion de formularios
 - [Sweet Alert 2] (https://sweetalert2.github.io/#download): Alertas y toasts
 
-# Desarrollado por Juan Pablo Ollalve
+# Desarrollado por
+
+Juan Pablo Ollave Perea (http://www.instagram.com/juanptattoo)
+
+
+ 
