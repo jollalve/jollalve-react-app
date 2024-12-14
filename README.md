@@ -12,7 +12,7 @@
 
 ### Version HOST 
 
-Si desea ver el proyecto, ingrese al siguiente link [JP-TATTOO-SUPPLY] (aca va el link)
+Si desea ver el proyecto, ingrese al siguiente link [JP-TATTOO-SUPPLY] (https://jollalve-react-app.vercel.app/)
 
 ### Librerias utilizadas
 
