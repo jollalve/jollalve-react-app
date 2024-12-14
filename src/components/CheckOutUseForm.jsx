@@ -21,7 +21,6 @@ const CheckOutUseForm = () => {
             date: serverTimestamp()
         }
         const ventas = collection (db, "ordenes")
-        //agregamos el doc
         addDoc(ventas, order)
         .then((res)=>{
             setOrderId(res.id)
